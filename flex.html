@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            /* border: 1px solid red;  */
+            justify-content: space-around;
+            margin-top: 50px;
+
+        }
+        .flex{
+            width: 50%;
+             /* border: 1px solid lawngreen;  */
+            
+        }
+        .flex1{
+            display: flex;
+            width: 400px;
+            background-image: linear-gradient(red, blue, yellow);
+            color: #fff; 
+            flex-shrink: 2;
+        }
+
+        .flex1 h2{margin-left:40px;
+            flex-shrink: 2;}
+
+        .flex2{
+            display: flex;
+            width: 400px;
+            justify-content: flex-end;
+            flex-shrink: 2;
+            
+        }
+
+        .flex2 form{
+            padding:25px ;
+            background-color:royalblue;
+            justify-content: center;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            <div class="flex flex1">
+                <h2>Subscribe To Our Newsletter</h2>
+            </div>
+            <div class="flex flex2">
+                <form action="">
+                <input type="text" placeholder="Enter Your Email Id">
+                <input type="submit" value="Submit">
+                </form>
+            </div>
+    </div>
+</body>
+</html>

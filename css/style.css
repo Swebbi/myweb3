@@ -1,0 +1,573 @@
+/* Google font */
+
+@font-face {
+    font-family: LeagueGothic-Regular-VariableFont_wdth;
+    src: url(../fonts/LeagueGothic-Regular-VariableFont_wdth.ttf);
+}
+
+/******************************************************** body *********************************************/
+
+
+body{
+    padding:0;
+    margin: 0;
+}
+
+.uni-padding{
+    padding:0 7%;
+}
+
+/* To use the given fonts except headings */
+
+*{font-family: 'Roboto', sans-serif;}
+
+/* To use the given font for all headings */
+
+h1,h2,h3,h4,h5,h6{
+    LeagueGothic-Regular-VariableFont_wdth;
+}
+
+/*********************************************************** top_bar ****************************************/
+
+#top-bar{
+            background-color:#576574 ;
+            overflow: hidden; 
+        
+}
+.toll-free{ float: left;
+            color: #fdfdfd; }
+            
+ 
+/* line-height:51px; because the height of the top_bar is 51px to vertically align center. */
+
+.social_icon{
+    float: right;
+    line-height:51px;
+}
+
+.fab{
+    background-color: #fdfdfd;
+    color:red;
+    padding: 7px;
+    margin: 0 10px;
+    border-radius:50px;
+}
+
+/* To target individually */
+
+.fa-twitter{ padding:7px}
+.fa-google-plus-g{
+    padding:7px 5px;
+}
+
+/*******************************************************logo_bar ****************************************/
+.logo img{
+    width:51px;
+    height:51px;
+    padding-top:10px;
+    padding-bottom:8px;
+}
+
+/*******************************************************nav_bar ****************************************/
+#nav_bar{
+    background-color:#ee5253;
+}
+
+#nav_bar ul li{
+    display: inline-block;
+    padding: 16.5px;
+}
+
+#nav_bar ul li a{
+ text-decoration:none;
+ color: #fdfdfd;
+ font-size: 16.5px;
+}
+/* 
+To hide the twitter log when screen size is big */
+
+
+
+
+/* Since ul had extra margin/space from logo section so margin 0 taken 
+margin-left:-52px; as ul had taken 52px extra from left*/
+
+#nav_bar ul{
+    margin: 0; 
+    margin-left:-52px;
+}
+
+ul{
+    margin: 0;
+}
+/************************************sub_menu ******************************/
+    .sub_menu1{
+        display: none;
+    }
+/******************************************************* Footer ****************************************/
+#imp_link{
+    background-color: #576574;
+    overflow: auto;
+    color: #fdfdfd;
+    justify-content: center;
+
+}
+
+.div33{
+    width: 33.33%;
+    float: left;
+    padding: 25px 0;
+    box-sizing: border-box;
+    
+    
+}
+
+.div33 h3{
+    text-decoration: underline;
+    text-decoration-thickness:2px;
+    text-underline-offset:10px;
+    
+}
+
+#footer-menu{
+    list-style-type: none;
+    padding: 0;
+
+}
+#footer-menu li{
+    padding-bottom:5px;
+}
+
+#footer-menu li a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+/* To move second and third div of footer left */
+
+.padding_left{
+    padding-left:100px ;
+
+}
+/* padding: 17px; to give paddint so the height can be adjusted */
+#copy_write{
+    background-color: #222f3e;
+    text-align: center;
+    color: #fdfdfd;
+    padding: 17px;
+}
+
+/* Since p tag and other tag may take some padding and margin so it has been done 0 */
+#copy_write p{
+    margin:0;
+    padding:0;
+}
+/* 
+a[href]{
+    text-decoration:none;
+    color: #fdfdfd;
+    
+}
+ul[type='none']{
+    margin-right: 40px;
+} */
+
+
+/***********************************BODY SECTION ****************************************/
+#poster{
+    background-image:url(../images/banner.jpg);
+    height:500px;
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: column;
+    
+}
+
+#poster h1{
+    font-size: 50px;
+}
+
+
+#poster p{
+    font-size: 18px;
+    text-align: center;
+    color:rgb(172, 175, 179);
+
+}
+
+ /* Why Us Section */
+
+ #why_us{
+     overflow: auto;}
+
+ #why_us h1{
+      color: #ee5253;
+      text-align:center;
+      font-size:35px;
+      margin-top: 50px;
+    }
+
+.section33{
+    width:33.33%;
+    float:left;   
+    text-align: center; 
+    box-sizing: border-box;
+    padding:50px 7%; 
+     
+}
+
+.section33 h2{
+    color: #ee5253;  
+}
+
+.section33 p{
+    color: #363636;    
+}
+
+
+/******************************************* blog section ************************************************/
+
+
+.blog{
+    overflow: auto;
+
+}
+
+#blog h1{
+    text-align: center;
+    color: #ee5253;
+    font-size:35px;
+    margin-top: 50px;
+}
+
+.section44{
+    width:33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding:50px 7%;   
+
+}
+
+.section44 img{
+    width: 100%;
+    height: 200px;
+    }
+
+
+
+    .section44 h2{
+        color: #ee5253;  
+        text-align: center;
+    }
+    
+    .section44 p{
+        color: #363636;   
+        text-align: center; 
+    }
+
+
+/************************************* Contact Us Section *******************************************/
+
+#contact_container{
+        background-color:#ee5253;
+        overflow: auto;
+        padding-top:20px;
+        padding-bottom: 30px;
+        padding-left: 100px;
+        padding-right: 0px;
+    
+}
+
+.section70{
+     width:70%;
+     float:left;
+}
+.section30{
+    width:30%;
+    float:right;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#contact_btn{
+    background-color: #fdfdfd;
+    color: #ee5253;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/************************************ Subscribe ********************************************/
+/* 
+padding-top:40px;
+padding-bottom:40px; to increase the heigt 80px */
+#subscribe_container{
+    /* width: 100%;
+    display: flex;
+    height: 164px;
+    align-items: center; */
+    background-color:#ee5253;
+    color:#fdfdfd ;
+    overflow: auto;
+    padding-top:40px;
+    padding-bottom:40px;
+    
+}
+.section50{
+    width: 50%;
+    float: left;
+    /* border: 2px solid red; */    
+}
+
+.section50 h2{
+    padding-left:100px;
+}
+
+/* padding-top:20px; to align center vertically so that both text and submit button can come bit below */
+
+.section50 form{
+    padding-top:17px;
+    
+}
+
+/**************************************    Form Input Text Area Target *********************************/
+/* 
+Here, we are targetin   g the text area where we write anything so place holder also targeted as it is in the
+text area.
+Since we have added 10px from top/bottom and 15px from right and left so the size of text area has increased
+font-size: 15px; has increased as text area font-size is 15px now 
+margin-right: 20px; means text area ke dahine taraf se 20px hat jaye jisse submit button ke beech 
+10px ka space ho gya
+border:0px; means border bilkul nahi*
+width: 45%; to increase the form input text area witdt    */
+
+.section50 input[type='text']{
+    font-size: 15px;
+    color: #ee5253;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border:0px;
+    width: 45%;   
+}
+
+/**************************************    Form Input Submit Area/button Target *********************************/
+
+/* font-size:15px; will increase the text(submit) size. 
+It automatically takes some border size to border:0px; taken to look like text form*/
+
+.section50 input[type='submit']{
+    font-size:15px;
+    color: #ee5253;
+    padding: 10px 15px;
+    border:0px;
+    
+}
+
+/*********************************************payment form *******************************************/
+
+
+/* 
+.section50 form[action='']{
+    text-align:center;
+    padding-left:200px;
+    
+}
+.section50 input[type='submit']{
+    font-size: 15px;
+    color: #ee5253;
+    padding: 10px 15px;
+    
+}
+
+.section50 h2{
+    
+    
+    padding:0 15%;
+    font-size: 28px;
+    color: #fdfdfd;
+
+} */
+
+/************************************************* Responsive ipad *****************************************/
+
+@media only screen and (max-width:768px) {
+
+    
+.fab{
+    padding: 2px;
+    margin: 0 1px;
+}
+.fa-twitter {
+    padding: 2px;
+  }
+
+.fa-google-plus-g {
+    padding: 1.90px 0px;
+  }
+
+  .uni-padding {
+    padding: 0 3%;
+  }
+
+  .toll-free {
+    float: left;
+    color: #fdfdfd;
+    font-size: 13px;
+    line-height:23px;
+  }
+  #poster h1 {
+    font-size: 30px;
+  }
+  .section33 h2 {
+    font-size: 16px;
+  }
+ 
+#contact_container {
+
+    padding-left:25px;
+}
+#contact_container h1 {
+            font-size: 20px;
+}
+
+#contact_btn {
+    padding: 10px 19px;
+    font-size: 10px;
+    margin-right: 20px;
+      }
+
+
+.section44 h2{
+  font-size: 16px;
+}
+
+.section50 h2{
+    font-size:20px;   
+  }
+
+
+  #subscribe_container {
+    height:80px;
+  }
+}
+
+/******************** To hide the mobile cross and mobile bar when screen size is big *********************/
+
+#nav_bar ul #mobile-cross{
+    display: none;
+}
+
+.mobile_bar{
+    display:none;
+}
+/************************************************* Responsive mobile *****************************************/
+/* This will apply for only 500px maximum width which means jab tak 0 se 500px tak hoga to apply hoga */
+@media only screen and (max-width:500px){
+
+                .div33,.section50,.section30,.section44,.section70{
+                    width:100%;
+                }
+
+                .section70 {
+                            text-align: center;
+                            /* To make contact container in center */
+
+                  }
+
+                  .uni-padding {
+                    padding:0 7%;
+              }
+
+              
+              #subscribe_container {
+                text-align: center;
+                padding-top:5px;
+                overflow: hidden;
+              }
+
+              .section50 h2 {
+                padding-left:0px;
+                margin-bottom:10px;
+                text-align: center;
+              }
+
+              .div33{
+                  padding: 25px 20px;
+                  text-align: center;
+              }
+}
+
+/************************************************* Responsive mobile menu *****************************************/
+
+@media only screen and (max-width:500px){
+
+    #nav_bar {
+        background-color: #ee5253;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 200px;
+        opacity:;
+        padding: 0px;
+      }
+      #nav_bar ul li {
+        display: block;
+        padding: 16px;
+        border-bottom:1px dotted rgb(218, 218, 174);
+      }
+
+      
+      #nav_bar ul li:hover{
+
+            background-color: rgb(104, 230, 230);
+      }
+
+   
+       
+      /* To increase the font size of cross button */
+
+      .fa-regular{
+          font-size: 25px;
+          color: #fdfdfd;
+      }
+      
+      /* To move the cross button left */
+
+      #mobile-cross{
+          text-align: right;
+      }
+ 
+    /*  left: -200px; taken as don't want to see the nav bar. It will move left 200px and will be invisible because 
+      width is 200px. It will be visible when we click on the cross button and for that we will use js */
+      
+      #nav_bar {
+        left: -200px;
+        transition:all 0.5s ease;
+        opacity:0.7;
+
+      }
+     /* To target and style mobile bar */
+
+      .mobile_bar{
+            background-color: #ee5253;
+            padding: 20px;
+            color: #fdfdfd;
+            font-size: 18px;
+      }
+ 
+   /* To display the mobile-cross and mobile_bar when screen size is 500px  */
+
+      #nav_bar ul #mobile-cross, .mobile_bar{
+        display:block;
+    }
+    
+
+}
+
+

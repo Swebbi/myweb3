@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--fabbicons to make website icon-->
+
+    <link rel="apple-touch-icon" sizes="76x76" href="images/fabicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fabicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fabicons/favicon-16x16.png">
+    <link rel="manifest" href="images/fabicons/site.webmanifest">
+    <link rel="mask-icon" href="images/fabicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>PST TO HTML</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+            font-size: 'popins'sans-serif;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            min-height:100vh;
+            background-color: aquamarine;
+
+
+        }
+
+        #container form {
+            padding: 20px;
+            background-color: #fff;
+            width:700px;
+            box-shadow: 0px 5px 10px rgb(128, 66, 66);
+        }
+        /* gap:15px; to give gap between billing address section and payment section veritically */
+
+        #container form .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap:25px;
+
+        }
+
+        #container form .row .col {
+            flex:1;
+        }
+        
+         .title{
+            font-size:20px;
+            color:#333;
+            padding-bottom:5px;
+            text-transform:capitalize;
+        }
+        /* or both are same
+        #container form .row .col .title{
+            font-size:20px;
+            color:#333;
+            padding-bottom:5px;
+            text-transform:capitalize;
+        } */
+
+        #container form .row .col .inputBox{
+
+            margin:15px 0;
+        }  
+
+        
+        #container form .row .col .inputBox label{
+            margin-bottom:5px;
+            display:block;
+        }
+        
+        
+        #container form .row .col .inputBox input{
+            width:100%;
+            border:1px solid #ccc;
+            padding:10px 15px;
+            font-size: 15px;
+            text-transform: none    ;
+        }
+
+        
+        #container form .row .col .inputBox input:focus{
+            border:1px solid green;
+        }
+
+        #container form .row .col .flex{
+            display: flex;
+            gap:25px;
+        }
+/*         
+        filter: drop-shadow(10px 10px 5px red); filter is used to use drop shadow and drop shadow is used 
+        to give shadow to the the image and text. Usually used in image. 1px is x-offset(:horizontal distance)
+        2px is y-offset(:vertical distance ) 3px is blur  */
+
+        .inputBox img{
+            width:50%;
+            height: 37px;
+            filter: drop-shadow(1px 2px 3px black);
+        }
+
+        .submit_btn{
+            width:100%;
+            padding: 20px;
+            font-size: 17px;
+            background:#8abea0;
+            color:white;
+            margin-top:5px;
+            cursor: pointer;
+
+        }
+        .submit_btn:hover{
+            background: #27ae60;
+            
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">billing address</h3>
+                    
+                    <div class="inputBox">
+                        <label for="">full name :</label>
+                        <input type="text" placeholder="sarfraz alam">
+                    </div>
+                    
+                    <div class="inputBox">
+                        <label for="email">email :</label>
+                        <input type="email" placeholder="example@example.com" required>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <label for="">address :</label>
+                        <input type="text" placeholder="room - street - locality">
+                    </div>
+                    
+                    <div class="inputBox">
+                        <label for="">city :</label>
+                        <input type="text" placeholder="mumbai ">
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="">state :</label>
+                            <input type="text" placeholder="india">
+                        </div>
+                        
+                        <div class="inputBox">
+                            <label for="">zip code  :</label>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- -------------------- -->
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+                    <div class="inputBox">
+                        <label for="">cards accepted :</label>
+                        <img src="images/fleximage.png" alt="all payments accepted image">
+                    </div>
+                    <div class="inputBox">
+                        <label for="">name on the card :</label>
+                        <input type="text" placeholder="sarfraz alam">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">enter card number :</label>
+                        <input type="number" placeholder="1111 2222 3333 4444">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">expiry month :</label>
+                        <input type="text" placeholder="Jan">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="">expiry year :</label>
+                            <input type="number" placeholder="2025">
+                        </div>
+                        <div class="inputBox">
+                            <label for="">cvv :</label>
+                            <input type="text" placeholder="123">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- -------------------- -->
+            </div> 
+            <input type="submit" value="proceed to checkout" class="submit_btn">
+        </form>
+    </div>
+</body>
+
+</html>
